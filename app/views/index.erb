@@ -1,0 +1,12 @@
+<%#
+ The index action should render the ERB view index.erb, which shows a list of all of the articles. %>
+ <u>
+<% @articles.each do |article| %>
+<li>
+<a href="/articles/<%= article.id %>">
+      <%= article.title %>
+  </a>
+  </li>
+
+  <%= end %>
+</ul>
